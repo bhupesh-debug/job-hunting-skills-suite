@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Career Agent Suite — AI Job Search & Placement Engine</title>
+  <title>Career Agent Suite — AI Job Search, Placement & Recruiter Forensics Engine</title>
   <meta name="description" content="Unified agentic suite of 6 career skills: HireMe, Injobman, Job Matcher, JD to ML Project, Live Job Hunter, and STEM OPT NYC Hunter.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -716,8 +716,8 @@
       <a href="#" class="brand">
         <div class="brand-icon">⚡</div>
         <div>
-          <div class="brand-title">Career Agent Hub <span class="badge badge-blue">v2.5 Suite</span></div>
-          <div class="brand-subtitle">Autonomous Career Ops & Placement Engine</div>
+          <div class="brand-title">Career Agent Hub <span class="badge badge-blue">v2.6 Suite</span></div>
+          <div class="brand-subtitle">Autonomous Career Ops, Placement & Recruiter Forensics Engine</div>
         </div>
       </a>
       <div class="header-actions">
@@ -758,6 +758,9 @@
       <button class="tab-btn" onclick="switchTab('stemopt')">
         <span class="tab-icon">🗽</span> <span>STEM OPT NYC</span> <span class="badge badge-rose">Immigration</span>
       </button>
+      <button class="tab-btn" onclick="switchTab('recruitxray')">
+        <span class="tab-icon">🕵️</span> <span>RecruitXray</span> <span class="badge badge-rose">Forensics</span>
+      </button>
     </div>
   </nav>
 
@@ -772,12 +775,12 @@
           <h1 class="hero-title">6 Specialized Skills. 1 Unified Career Engine.</h1>
           <p class="hero-desc">
             An end-to-end operational suite engineered for senior finance, analytics, and tech professionals. 
-            From initial multi-platform market discovery and NYC E-Verify employer validation to ATS match scoring, 
+            From initial multi-platform market discovery, forensic recruiter due diligence (RecruitXray), and NYC E-Verify employer validation to ATS match scoring, 
             executive application packs, production ML portfolio artifacts, and high-stakes salary negotiation.
           </p>
           <div class="hero-stats">
             <div class="stat-card">
-              <span class="stat-value">6 Skills</span>
+              <span class="stat-value">7 Skills</span>
               <span class="stat-label">Agentic Capabilities</span>
             </div>
             <div class="stat-card">
@@ -950,6 +953,25 @@
           </div>
           <button class="btn btn-primary btn-sm" onclick="switchTab('stemopt')">Launch OPT Hunter →</button>
         </div>
+
+        <!-- CARD 7: RECRUITXRAY -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <span class="badge badge-rose">Forensics & Due Diligence</span>
+              <h3 class="card-title" style="margin-top: 0.4rem;">🕵️ RecruitXray</h3>
+            </div>
+            <div style="font-size: 1.5rem;">🔍</div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem; flex: 1;">
+            Forensic due diligence investigator combining Big 4 audit rigor, digital footprint analysis, scam signal detection, and contradiction analysis to vet recruiters before you share data or accept offers.
+          </p>
+          <div style="font-size: 0.775rem; color: var(--accent-cyan); margin-bottom: 1rem; font-family: 'JetBrains Mono', monospace;">
+            Triggers: "vet this recruiter", "is this recruiter legit", "scam check"
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="switchTab('recruitxray')">Launch RecruitXray →</button>
+        </div>
+
 
       </div>
     </div>
@@ -1855,6 +1877,330 @@ I look forward to discussing how my analytical toolkit aligns with Bloomberg LP'
 
     </div>
 
+  
+    <!-- ==================== TAB 8: RECRUITXRAY ==================== -->
+    <div id="tab-recruitxray" class="tab-content">
+      <div class="hero-banner" style="background: linear-gradient(135deg, rgba(244, 63, 94, 0.15), rgba(13, 21, 39, 0.9));">
+        <div class="hero-content">
+          <div class="hero-tag" style="color: var(--accent-rose);">Skill Module • skills/recruitxray</div>
+          <h1 class="hero-title">RecruitXray — Forensic Recruiter Due Diligence</h1>
+          <p class="hero-desc">
+            Acts as a forensic due diligence investigator combining Big 4 audit skepticism, cybersecurity domain forensics, 
+            recruiting business model deconstruction, and scam pattern recognition to generate comprehensive risk reports on recruiters and staffing agencies.
+          </p>
+          <div class="chips-group">
+            <span class="badge badge-rose">Phase 1: Digital Forensics</span>
+            <span class="badge badge-rose">Phase 2: Presence Map</span>
+            <span class="badge badge-rose">Phase 3: Review Authenticity & Ghosting</span>
+            <span class="badge badge-rose">Phase 4: Business Model</span>
+            <span class="badge badge-rose">Phase 5: Scam Signals</span>
+            <span class="badge badge-rose">Phase 6: Contradiction Engine ⚡</span>
+            <span class="badge badge-rose">Phase 7: Verified Placements</span>
+            <span class="badge badge-rose">Phase 8: Riskometer Score</span>
+            <span class="badge badge-rose">Phase 9: Final Verdict</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECRUITXRAY SUB-TABS -->
+      <div class="subtabs-bar">
+        <button class="subtab-btn active" onclick="switchSubtab('recruitxray', 'investigator')">🔍 Live Recruiter Investigator</button>
+        <button class="subtab-btn" onclick="switchSubtab('recruitxray', 'protocol')">📋 9-Phase Audit Protocol</button>
+        <button class="subtab-btn" onclick="switchSubtab('recruitxray', 'scams')">🚩 Scam Archetypes & Red Flags</button>
+        <button class="subtab-btn" onclick="switchSubtab('recruitxray', 'guardrails')">🛡️ Candidate Safety Guardrails</button>
+      </div>
+
+      <!-- SUBTAB 1: LIVE INVESTIGATOR -->
+      <div id="subtab-recruitxray-investigator" class="subpanel active">
+        <div class="grid-2">
+          
+          <!-- INPUT CARD -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Recruiter Dossier Input</h3>
+              <div style="display:flex; gap:0.5rem;">
+                <span class="badge badge-blue">Forensic Input</span>
+              </div>
+            </div>
+            
+            <!-- PRESETS -->
+            <div style="margin-bottom: 1.25rem;">
+              <label class="form-label">Preload Investigation Presets</label>
+              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                <button class="btn btn-secondary btn-sm" onclick="loadRecruiterPreset('legit')">🟢 Verified Firm (Robert Half / Apex)</button>
+                <button class="btn btn-secondary btn-sm" onclick="loadRecruiterPreset('bench')">🟡 Subcontractor / Bench Trap</button>
+                <button class="btn btn-secondary btn-sm" onclick="loadRecruiterPreset('scam')">🔴 Unsolicited Telegram Scam</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Staffing Agency / Recruiter Firm Name</label>
+              <input type="text" id="rxFirmName" class="form-control" value="Robert Half International / Protiviti">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Recruiter Contact Name & Profile URL</label>
+              <input type="text" id="rxRecruiterName" class="form-control" value="Jessica Miller — Senior Executive Recruiter (linkedin.com/in/jessica-miller-talent)">
+            </div>
+
+            <div class="grid-2" style="margin-bottom: 0;">
+              <div class="form-group">
+                <label class="form-label">Website Domain / Email Domain</label>
+                <input type="text" id="rxDomain" class="form-control" value="roberthalf.com (@roberthalf.com)">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Initial Outreach Channel</label>
+                <select id="rxChannel" class="form-control">
+                  <option value="linkedin_inmail">LinkedIn InMail (Direct Message)</option>
+                  <option value="corporate_email">Corporate Domain Email</option>
+                  <option value="free_email">Free Email (Gmail / Yahoo / Outlook)</option>
+                  <option value="whatsapp_telegram">WhatsApp / Telegram / SMS</option>
+                  <option value="job_board">Job Board Message (Indeed / ZipRecruiter)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Promised Position & Compensation</label>
+              <input type="text" id="rxRoleOffer" class="form-control" value="Senior Financial Analyst / FP&A Lead — $145,000 - $165,000 base + 15% bonus (NYC Hybrid)">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Observed Flags / Warning Signals</label>
+              <div style="display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.825rem; color: var(--text-muted);">
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                  <input type="checkbox" id="flagFee" style="accent-color:var(--accent-rose);"> Asked candidate for upfront training or placement fee
+                </label>
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                  <input type="checkbox" id="flagCheck" style="accent-color:var(--accent-rose);"> Sent or offered a check for "home office equipment"
+                </label>
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                  <input type="checkbox" id="flagChat" style="accent-color:var(--accent-rose);"> Conducted interview exclusively over text / messaging app
+                </label>
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                  <input type="checkbox" id="flagSsn" style="accent-color:var(--accent-rose);"> Requested SSN, passport, or banking info before written offer
+                </label>
+                <label style="display:flex; align-items:center; gap:0.5rem; cursor:pointer;">
+                  <input type="checkbox" id="flagNoClient" style="accent-color:var(--accent-rose);"> Refuses to disclose end-client company identity
+                </label>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem;">
+              <button class="btn btn-primary" onclick="runRecruiterInvestigation()">🔍 Run Forensic Audit</button>
+              <button class="btn btn-secondary" onclick="copyRecruiterReport()">Copy Full Report MD</button>
+            </div>
+          </div>
+
+          <!-- INVESTIGATION REPORT OUTPUT -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Forensic Audit Dossier</h3>
+              <span id="rxVerdictBadge" class="badge badge-green">Low Risk (12/100)</span>
+            </div>
+
+            <!-- RISKOMETER DISPLAY -->
+            <div style="background: rgba(10,16,31,0.8); border: 1px solid var(--border-glow); border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 1.25rem;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+                <span style="font-family:'Outfit', sans-serif; font-size:1.1rem; font-weight:700; color:#fff;">RECRUITXRAY RISKOMETER</span>
+                <span id="rxRiskScoreText" style="font-family:'JetBrains Mono', monospace; font-size:1.4rem; font-weight:800; color:#34d399;">12 / 100</span>
+              </div>
+              <div style="width:100%; height:12px; background:rgba(255,255,255,0.1); border-radius:6px; overflow:hidden; margin-bottom:0.75rem;">
+                <div id="rxRiskProgressBar" style="width:12%; height:100%; background:linear-gradient(90deg, #10b981, #059669); transition:all 0.4s ease;"></div>
+              </div>
+              <div style="display:flex; justify-content:space-between; font-size:0.7rem; color:var(--text-muted); text-transform:uppercase;">
+                <span>🟢 0–30 Low Risk</span>
+                <span>🟡 31–60 Medium Risk</span>
+                <span>🔴 61–100 High/Scam</span>
+              </div>
+            </div>
+
+            <!-- PHASES REPORT OUTPUT -->
+            <div class="terminal-box" style="margin-bottom:0;">
+              <div class="terminal-header">
+                <div class="terminal-title">recruitxray_forensic_report.md</div>
+                <button class="btn btn-secondary btn-sm" onclick="copyRecruiterReport()">Copy MD</button>
+              </div>
+              <div id="rxReportOutput" class="terminal-body" style="max-height: 440px;">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SUBTAB 2: 9-PHASE AUDIT PROTOCOL -->
+      <div id="subtab-recruitxray-protocol" class="subpanel">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">The 9-Phase Recruiter Due Diligence Protocol</h3>
+            <span class="badge badge-rose">Forensic Framework</span>
+          </div>
+          <div class="grid-3">
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 1</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Digital Forensics</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Domain age check (WHOIS), public ownership transparency, hosting location vs claimed corporate HQ, SSL validation (DV vs EV), corporate Secretary of State registration.
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 2</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Cross-Platform Footprint</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                LinkedIn company page employee headcount consistency, Glassdoor reviews, Indeed agency profile, BBB rating, Google Maps physical office Street View audit.
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 3</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Review Authenticity & Ghosting</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Sentiment analysis, detection of clustered fake bot reviews, negative review spotlights, and the 3-channel Responsiveness Rating (Online, Offline, Recruiter On-Call).
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 4</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Business Model Audit</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Deconstruct revenue engine: Employer-paid contingency/retained (legit) vs candidate training bundle fees vs third-party staffing body shop.
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 5</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Scam Signal Detection</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Check for blacklists, ScamAdviser domain trust score, fake check scams, phishing patterns, early SSN/banking demands, and free email domains (@gmail/@outlook).
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 6</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Contradiction Engine ⚡</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Compare what the firm claims against evidence: Claimed "500 placements" vs zero LinkedIn alumni; claimed "10 years" vs 6-month domain age; claimed "NYC HQ" vs mailbox rental.
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 7</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Verified Placement Proof</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Search LinkedIn for genuine candidate announcements: "Thanks to [Firm] for helping me land my role at [Company]". Absence of placement proof is a strong credibility gap.
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 8</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Riskometer Scoring</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                Weighted matrix across Digital Trust (20%), Platform Presence (20%), Review Authenticity (20%), Business Model (20%), and Scam Signals (20%).
+              </p>
+            </div>
+            <div class="card" style="background: rgba(10,16,31,0.5);">
+              <div style="font-size:0.725rem; color:var(--accent-rose); font-weight:700;">PHASE 9</div>
+              <h4 style="color:#fff; margin:0.3rem 0;">Final Verdict</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">
+                One-Line Brutal Truth, 3 Biggest Risks, Reasons It Might Still Be Legit, and actionable next steps for the candidate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBTAB 3: SCAM PATTERNS -->
+      <div id="subtab-recruitxray-scams" class="subpanel">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Top 4 Recruiter Traps & Scam Patterns</h3>
+            <span class="badge badge-rose">Threat Intelligence</span>
+          </div>
+          <div class="grid-2">
+            <div class="card" style="background:rgba(244,63,94,0.05); border: 1px solid rgba(244,63,94,0.3);">
+              <div class="badge badge-rose" style="margin-bottom:0.5rem;">TRAP #1: The Home Office Check Scam</div>
+              <h4 style="color:#fff; margin-bottom:0.4rem;">Fake Equipment Advance</h4>
+              <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5;">
+                Recruiter sends an e-check or cashier check for $2,500–$5,000 to "buy computer monitors from our approved vendor." The check bounces 4 days later after you wire money to their fake vendor. Real companies ship pre-configured laptops directly via FedEx.
+              </p>
+            </div>
+            <div class="card" style="background:rgba(245,158,11,0.05); border: 1px solid rgba(245,158,11,0.3);">
+              <div class="badge badge-amber" style="margin-bottom:0.5rem;">TRAP #2: The Third-Party Bench Placement Trap</div>
+              <h4 style="color:#fff; margin-bottom:0.4rem;">OPT Visa & Wage Theft Trap</h4>
+              <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5;">
+                Staffing agency promises direct employment but places you on an unpaid "bench" while marketing your modified resume to third-party clients. Violates USCIS Form I-983 rules and creates critical immigration risk.
+              </p>
+            </div>
+            <div class="card" style="background:rgba(244,63,94,0.05); border: 1px solid rgba(244,63,94,0.3);">
+              <div class="badge badge-rose" style="margin-bottom:0.5rem;">TRAP #3: The Upfront Placement / Training Fee</div>
+              <h4 style="color:#fff; margin-bottom:0.4rem;">Pay-to-Play Scam</h4>
+              <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5;">
+                Agency claims you need a "$500 certification" or "mandatory onboarding background fee" before submitting your profile. Legitimate recruiters are paid 100% by the hiring employer upon successful placement. Candidates NEVER pay fees.
+              </p>
+            </div>
+            <div class="card" style="background:rgba(59,130,246,0.05); border: 1px solid rgba(59,130,246,0.3);">
+              <div class="badge badge-blue" style="margin-bottom:0.5rem;">TRAP #4: The Resume Harvester / Bait-and-Switch</div>
+              <h4 style="color:#fff; margin-bottom:0.4rem;">Phantom Job Postings</h4>
+              <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5;">
+                Agency posts glamorous Fortune 500 job postings with no actual contract. They collect hundreds of resumes to win vendor contracts or push candidates into lower-paying contract jobs. Always ask: "Is this an exclusive contract or active requisition?"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUBTAB 4: GUARDRAILS -->
+      <div id="subtab-recruitxray-guardrails" class="subpanel">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Candidate Protection Guardrails: What NEVER to Disclose</h3>
+            <span class="badge badge-green">Zero-Trust Protocol</span>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Information / Document</th>
+                  <th>Safe Timing</th>
+                  <th>Danger Zone</th>
+                  <th>RecruitXray Protection Rule</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong style="color:#fff;">Social Security Number (SSN)</strong></td>
+                  <td>Only on official background check portal AFTER signed written offer</td>
+                  <td>Early phone screen or email intake form</td>
+                  <td><span class="badge badge-rose">Never provide on initial form</span></td>
+                </tr>
+                <tr>
+                  <td><strong style="color:#fff;">Banking / Direct Deposit Details</strong></td>
+                  <td>First day of official employment via internal HR portal</td>
+                  <td>Anytime prior to start date</td>
+                  <td><span class="badge badge-rose">Definite identity / check fraud</span></td>
+                </tr>
+                <tr>
+                  <td><strong style="color:#fff;">Full Date of Birth (DOB)</strong></td>
+                  <td>Background check authorization stage</td>
+                  <td>First recruiter outreach</td>
+                  <td><span class="badge badge-amber">Provide month & day only if required</span></td>
+                </tr>
+                <tr>
+                  <td><strong style="color:#fff;">Passport / Visa Documents (I-20, EAD)</strong></td>
+                  <td>Form I-9 completion after offer acceptance</td>
+                  <td>Unverified third-party recruiters</td>
+                  <td><span class="badge badge-blue">State status textually; share PDF only with HR</span></td>
+                </tr>
+                <tr>
+                  <td><strong style="color:#fff;">References Contact Info</strong></td>
+                  <td>Final round when offer is imminent</td>
+                  <td>Initial submission</td>
+                  <td><span class="badge badge-green">Prevent reference farming for sales leads</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </main>
 
   <!-- TOAST NOTIFICATION -->
@@ -1874,7 +2220,7 @@ I look forward to discussing how my analytical toolkit aligns with Bloomberg LP'
       if (targetContent) targetContent.classList.add('active');
 
       const buttons = document.querySelectorAll('#mainTabList .tab-btn');
-      const tabOrder = ['overview', 'hireme', 'injobman', 'jobmatcher', 'jd2ml', 'livehunter', 'stemopt'];
+      const tabOrder = ['overview', 'hireme', 'injobman', 'jobmatcher', 'jd2ml', 'livehunter', 'stemopt', 'recruitxray'];
       const index = tabOrder.indexOf(tabId);
       if (index !== -1 && buttons[index]) {
         buttons[index].classList.add('active');
@@ -2578,6 +2924,7 @@ You have access to 6 specialized skills:
 4. jd-to-ml-project: 10-step ML project architect, data simulation, baseline/SOTA modeling, and 10-slide deck.
 5. live-job-hunter: Multi-platform Boolean job search engine, 20+ job opportunity table, and hiring manager outreach.
 6. stem-opt-nyc-employer-hunter: U.S. immigration & career strategist, 25+ NYC E-Verify database, and Form I-983 compliance.
+7. recruitxray: Forensic recruiter due diligence investigator (Big 4 audit, scam detection, 9-phase audit, Riskometer 0-100 score).
 
 Always provide top 1% executive-level, mathematically sound, and rigorously tailored deliverables.`;
       copyToClipboard(prompt, 'Master Suite System Prompt copied!');
@@ -2594,6 +2941,7 @@ Always provide top 1% executive-level, mathematically sound, and rigorously tail
       renderComplianceChecklist();
       updateOptScript();
       renderEmployerTable(EMPLOYERS_DATA);
+      runRecruiterInvestigation();
 
       // Accordion click handlers
       document.querySelectorAll('.accordion-header').forEach(header => {

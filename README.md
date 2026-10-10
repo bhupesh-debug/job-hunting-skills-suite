@@ -3,7 +3,7 @@
 > A battle-tested suite of 6 agentic skills for senior professionals, international candidates (F-1 STEM OPT), and high-impact job seekers. Engineered for use with **Antigravity**, **Claude Code**, **Gemini**, **Cursor**, **ChatGPT**, and agentic coding workflows.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 6](https://img.shields.io/badge/Skills-6%20Specialized%20Agents-indigo.svg)](#the-skills-suite)
+[![Skills: 7](https://img.shields.io/badge/Skills-7%20Specialized%20Agents-indigo.svg)](#the-skills-suite)
 [![Platform: Antigravity%20%7C%20Claude%20Code](https://img.shields.io/badge/Platform-Antigravity%20%7C%20Claude%20Code-emerald.svg)](#installation--agent-setup)
 [![Interactive App: Included](https://img.shields.io/badge/Web%20App-Multi--Tab%20Executive%20Suite-cyan.svg)](#interactive-web-application)
 
@@ -11,7 +11,7 @@
 
 ## 🎯 The Skills Suite
 
-This repository consolidates 6 high-leverage career and job-hunting agent skills into a single unified workspace:
+This repository consolidates 7 high-leverage career and job-hunting agent skills into a single unified workspace:
 
 | Skill | Folder | Package | Core Capability |
 |---|---|---|---|
@@ -21,6 +21,7 @@ This repository consolidates 6 high-leverage career and job-hunting agent skills
 | **JD → ML Project** | [`skills/jd-to-ml-project`](skills/jd-to-ml-project) | [`packages/jd-to-ml-project.skill`](packages/jd-to-ml-project.skill) | 10-step ML project architect that deconstructs any JD into an execution-ready production ML repo and 10-slide interview presentation. |
 | **Live Job Hunter** | [`skills/live-job-hunter`](skills/live-job-hunter) | [`packages/live-job-hunter.skill`](packages/live-job-hunter.skill) | Real-time multi-platform job hunter (LinkedIn, Indeed, Wellfound, ATS), candidate keyword forensics, 20+ curated pipeline, and hiring manager outreach. |
 | **STEM OPT NYC Hunter** | [`skills/stem-opt-nyc-employer-hunter`](skills/stem-opt-nyc-employer-hunter) | [`packages/stem-opt-nyc-employer-hunter.skill`](packages/stem-opt-nyc-employer-hunter.skill) | U.S. immigration + career strategist for F-1 STEM OPT: 25+ NYC E-Verify database, compliance auditor (Form I-983), and 30-day conversion action plan. |
+| **RecruitXray** | [`skills/recruitxray`](skills/recruitxray) | [`packages/recruitxray.skill`](packages/recruitxray.skill) | Forensic recruiter due diligence investigator: 9-phase audit (digital footprint, scam signal detection, contradiction analysis, Riskometer 0–100 score). |
 
 ---
 
@@ -36,7 +37,8 @@ job-hunting-skills-suite/
 │   ├── jd-to-ml-project.skill
 │   ├── job-matcher.skill
 │   ├── live-job-hunter.skill
-│   └── stem-opt-nyc-employer-hunter.skill
+│   ├── stem-opt-nyc-employer-hunter.skill
+│   └── recruitxray.skill
 └── skills/                                  # Unpacked skill source code, scripts & references
     ├── hireme/
     │   ├── SKILL.md                         # 6-step coaching protocol & prompt engine
@@ -59,13 +61,15 @@ job-hunting-skills-suite/
     │   └── SKILL.md                         # Resume vs JD gap analysis & scoring rubric
     ├── live-job-hunter/
     │   └── SKILL.md                         # Boolean query engine, search cadence & pipeline schema
-    └── stem-opt-nyc-employer-hunter/
+    ├── stem-opt-nyc-employer-hunter/
         ├── SKILL.md                         # NYC STEM OPT placement workflow & rules
         └── references/
             ├── 30-day-action-plan.md        # Daily 10 apps + 3 networking conversion plan
             ├── employer-profiles.md         # 25 curated NYC E-Verify employer profiles
             ├── red-flags-and-compliance.md  # Third-party staffing traps & Form I-983 audit
             └── targeting-strategy.md        # LinkedIn Boolean strings & outreach scripts
+    └── recruitxray/
+        └── SKILL.md                         # Forensic recruiter vetting & 9-phase due diligence
 ```
 
 ---
@@ -121,13 +125,15 @@ Open any `SKILL.md` file in `skills/<skill-name>/SKILL.md` and paste its content
 ## 🔄 End-to-End Workflow Pipeline
 
 ```text
-[1. Job Discovery]
-       │
-       ▼
-  live-job-hunter  ──────►  20+ Active Senior Roles (LinkedIn, Indeed, ATS)
+[1. Job Discovery & Recruiter Forensics]
        │
        ├─────────────────────────────────────────┐
        ▼                                         ▼
+  live-job-hunter                            recruitxray
+  (20+ Active Senior Roles)                 (Recruiter Due Diligence & Riskometer)
+       │                                         │
+       ├─────────────────────────────────────────┘
+       ▼
 [2. Employer Verification]              [3. Match Forensics]
        │                                         │
 stem-opt-nyc-employer-hunter                 job-matcher
