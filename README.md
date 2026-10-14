@@ -3,7 +3,7 @@
 > A battle-tested suite of 6 agentic skills for senior professionals, international candidates (F-1 STEM OPT), and high-impact job seekers. Engineered for use with **Antigravity**, **Claude Code**, **Gemini**, **Cursor**, **ChatGPT**, and agentic coding workflows.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 7](https://img.shields.io/badge/Skills-7%20Specialized%20Agents-indigo.svg)](#the-skills-suite)
+[![Skills: 8](https://img.shields.io/badge/Skills-8%20Specialized%20Agents-indigo.svg)](#the-skills-suite)
 [![Platform: Antigravity%20%7C%20Claude%20Code](https://img.shields.io/badge/Platform-Antigravity%20%7C%20Claude%20Code-emerald.svg)](#installation--agent-setup)
 [![Interactive App: Included](https://img.shields.io/badge/Web%20App-Multi--Tab%20Executive%20Suite-cyan.svg)](#interactive-web-application)
 
@@ -11,10 +11,11 @@
 
 ## 🎯 The Skills Suite
 
-This repository consolidates 7 high-leverage career and job-hunting agent skills into a single unified workspace:
+This repository consolidates 8 high-leverage career and job-hunting agent skills into a single unified workspace:
 
 | Skill | Folder | Package | Core Capability |
 |---|---|---|---|
+| **Mastery** | [`skills/mastery`](skills/mastery) | [`packages/mastery.skill`](packages/mastery.skill) | Elite job-mastery coach, operations trainer, process engineer & performance mentor: complete 8-phase training program, reverse-engineered workflows, practical job simulator & 30/60/90-day plan. |
 | **HireMe** | [`skills/hireme`](skills/hireme) | [`packages/hireme.skill`](packages/hireme.skill) | Elite interview coaching, 6-step system, word-for-word salary negotiation, STAR story bank & automated branded PDF report generator. |
 | **Injobman** | [`skills/injobman`](skills/injobman) | [`packages/injobman.skill`](packages/injobman.skill) | End-to-end application package builder: JD breakdown, ATS-tailored resume (.docx), cover letter (.docx), and 80/20 interview cards. |
 | **Job Matcher** | [`skills/job-matcher`](skills/job-matcher) | [`packages/job-matcher.skill`](packages/job-matcher.skill) | Deep resume-to-JD match analysis, keyword gap forensics, ATS scoring rubric, and executive PDF reporting with color-coded alerts. |
@@ -32,6 +33,7 @@ job-hunting-skills-suite/
 ├── index.html                               # Rich multi-tab interactive web portal & execution engine
 ├── README.md                                # Comprehensive documentation & operational guide
 ├── packages/                                # Pre-packaged .skill zip bundles for 1-click import
+│   ├── mastery.skill
 │   ├── hireme.skill
 │   ├── injobman.skill
 │   ├── jd-to-ml-project.skill
@@ -40,6 +42,8 @@ job-hunting-skills-suite/
 │   ├── stem-opt-nyc-employer-hunter.skill
 │   └── recruitxray.skill
 └── skills/                                  # Unpacked skill source code, scripts & references
+    ├── mastery/
+    │   └── SKILL.md                         # 8-phase job-mastery curriculum, workflows & simulation engine
     ├── hireme/
     │   ├── SKILL.md                         # 6-step coaching protocol & prompt engine
     │   ├── scripts/
